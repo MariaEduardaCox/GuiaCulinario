@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="375dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="GUIA CULINÁRIO"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#009688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="588dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/local1tela2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Applebee's"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:translationX="0dp" />
+
+            <ImageView
+                android:id="@+id/apple1"
+                android:layout_width="470dp"
+                android:layout_height="450dp"
+                android:translationY="-70dp"
+                app:srcCompat="@mipmap/a" />
+
+            <ImageView
+                android:id="@+id/apple2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationY="-150dp"
+                app:srcCompat="@mipmap/applecomida" />
+
+            <ImageView
+                android:id="@+id/apple3"
+                android:layout_width="420dp"
+                android:layout_height="300dp"
+                android:translationY="-175dp"
+                app:srcCompat="@mipmap/lancheappe" />
+
+            <TextView
+                android:id="@+id/descricao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A rede Applebee’s Ⓡ foi aberta na Geórgia (Atlanta – EUA) em novembro de 1980, por Bill e T.J. Palmer. A ideia dos dois era criar um restaurante que oferecesse os melhores serviços para seus clientes: boa comida, preço moderado e ótimo atendimento. Hoje, o conceito internacional da rede é o “neighborhood grill”, que traduz a preocupação em transmitir ao cliente um ambiente confortável e aconchegante. "
+                android:textAlignment="center"
+                android:translationY="-180dp" />
+
+            <ImageButton
+                android:id="@+id/mapsApple"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:translationX="140dp"
+                android:translationY="-150dp"
+                app:srcCompat="@mipmap/mapsquadrado" />
+
+            <Button
+                android:id="@+id/btnSiteA"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Site"
+                android:translationX="60dp"
+                android:translationY="-140dp" />
+
+            <Button
+                android:id="@+id/btnTelefoneA"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Telefone"
+                android:translationX="220dp"
+                android:translationY="-200dp" />
+
+            <TextView
+                android:id="@+id/local2Tela2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Café com Gato"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:translationY="-180dp"
+                android:translationZ="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSiteA" />
+
+            <ImageView
+                android:id="@+id/cafe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationY="-300dp"
+                app:srcCompat="@mipmap/cafee" />
+
+            <ImageView
+                android:id="@+id/cafe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationY="-460dp"
+                app:srcCompat="@mipmap/gato" />
+
+            <ImageView
+                android:id="@+id/cafe3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="-740dp"
+                app:srcCompat="@mipmap/gatinho" />
+
+            <TextView
+                android:id="@+id/descricao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se você está pensando &quot;onde comer em Sorocaba&quot; ou &quot;o que fazer em Sorocaba&quot;, venha para o Café com Gato, temos um cardápio completo e variado, é um ótimo local para toda e qualquer hora, seja no café da manhã, almoço, jantar e até Happy Hour. Além de diversos tipos de cafés, incluindo alguns alcoólicos, o cardápio é composto por: sucos, bebidas, frapês, salgados, tortas doces, massas, saladas, sopas, opções de comidas e bebidas vegetarianas e veganas. A Cafeteria ainda possui uma loja com produtos para gatos e gateiras e gateiros e ocasionalmente promove eventos, como: palestras, workshops, lançamentos e visita ao gatil com com agendamento prévio. "
+                android:textAlignment="center"
+                android:translationY="-970dp" />
+
+            <ImageButton
+                android:id="@+id/mapsCafe"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:translationX="140dp"
+                android:translationY="-940dp"
+                app:srcCompat="@mipmap/mapsquadrado" />
+
+            <Button
+                android:id="@+id/btnSiteC"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Site"
+                android:translationX="60dp"
+                android:translationY="-920dp" />
+
+            <Button
+                android:id="@+id/btnTelefoneC"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Telefone"
+                android:translationX="200dp"
+                android:translationY="-980dp" />
+
+            <TextView
+                android:id="@+id/local3Tela2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Big Jeff's Burger"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:translationY="-960dp"
+                android:translationZ="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSiteA" />
+
+            <ImageView
+                android:id="@+id/jeffs1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="-1160dp"
+                app:srcCompat="@mipmap/jef" />
+
+            <ImageView
+                android:id="@+id/jeffs2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:translationY="-1445dp"
+                app:srcCompat="@mipmap/milk" />
+
+            <ImageView
+                android:id="@+id/jeffs3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="-1525dp"
+                app:srcCompat="@mipmap/hamburguer" />
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Você ama hamburguer? Então deveria conhecer o Big Jeff's Burger. São especialistas em lanches artesanais com carnes de primeira qualidade seja bovino, suíno ou aves como frango. Além de deleciosos possuem uma apresentação super diferente e bem servida. O ambiente é bem aconchegante, tanto para um encontro a dois quanto a comemoração de aniversário com a família inteira, vale a pena conhecer! "
+                android:textAlignment="center"
+                android:translationY="-1520dp" />
+
+            <ImageButton
+                android:id="@+id/mapsJeffs"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:translationX="140dp"
+                android:translationY="-1500dp"
+                app:srcCompat="@mipmap/mapsquadrado" />
+
+            <Button
+                android:id="@+id/btnSiteJ"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Site"
+                android:translationX="60dp"
+                android:translationY="-1480dp" />
+
+            <Button
+                android:id="@+id/btnTelefoneJ"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Telefone"
+                android:translationX="200dp"
+                android:translationY="-1540dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

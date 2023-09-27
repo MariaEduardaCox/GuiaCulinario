@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="375dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="GUIA CULINÁRIO"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#009688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="569dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagem1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@mipmap/applebees" />
+
+            <TextView
+                android:id="@+id/local1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Applebee's"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnLocal1"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Saiba Mais"
+                android:translationX="140dp"
+                android:translationY="10dp" />
+
+            <ImageView
+                android:id="@+id/imagem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/cafe" />
+
+            <TextView
+                android:id="@+id/local2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Café com Gato"
+                android:textSize="34sp"
+                android:translationY="-20dp" />
+
+            <Button
+                android:id="@+id/btnLocal2"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Saiba Mais"
+                android:translationX="140dp" />
+
+            <ImageView
+                android:id="@+id/imagem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/jeffs" />
+
+            <TextView
+                android:id="@+id/local3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Big Jeffs"
+                android:textSize="34sp"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/btnLocal3"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#009688"
+                android:text="Saiba Mais"
+                android:translationX="140dp"
+                android:translationY="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
